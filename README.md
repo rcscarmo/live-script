@@ -5,9 +5,8 @@ Ele utiliza FFmpeg para a transmissão em tempo real.
 
 # Plataformas
 
-[x] Twitch
-[] Youtube
-
+- [x] Twitch
+- [ ] Youtube
 
 ## Estrutura de Pastas
 
@@ -35,8 +34,9 @@ Execute o comando abaixo para criar um ambiente virtual:
 python -m venv .venv
 ```
 
-2. Ative o ambiente virtual e instale as dependências
-   - Windows:
+### 2. Ative o ambiente virtual e instale as dependências
+
+- Windows:
 
 ```bash
 venv\Scripts\activate
@@ -50,8 +50,9 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-3. Execute o script
-   Certifique-se de que os vídeos estão na pasta videos/ e de que todas as configurações estão corretas. Em seguida, execute:
+### 3. Execute o script
+
+Certifique-se de que os vídeos estão na pasta `videos` e de que todas as configurações estão corretas. Em seguida, execute:
 
 ```bash
 python live.py
