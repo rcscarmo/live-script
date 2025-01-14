@@ -1,0 +1,8 @@
+# FOLDERS
+.venv/
+
+# FILES
+videos/*.mp4
+videos/*.wmv
+videos/*.flv
+.env
