@@ -1,6 +1,13 @@
 # Live Streaming Script
 
-Este projeto permite transmitir uma lista de vídeos como se fossem lives para plataformas como YouTube e Twitch. Ele utiliza FFmpeg para a transmissão em tempo real.
+Este projeto permite transmitir uma lista de vídeos como se fossem lives para plataformas de stream.
+Ele utiliza FFmpeg para a transmissão em tempo real.
+
+# Plataformas
+
+[x] Twitch
+[] Youtube
+
 
 ## Estrutura de Pastas
 
