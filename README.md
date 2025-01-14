@@ -25,7 +25,7 @@ Certifique-se de que o **Python 3.8+** e o **FFmpeg** estão instalados no seu s
 Execute o comando abaixo para criar um ambiente virtual:
 
 ```bash
-python -m venv venv
+python -m venv .venv
 ```
 
 2. Ative o ambiente virtual e instale as dependências
@@ -49,12 +49,3 @@ pip install -r requirements.txt
 ```bash
 python live.py
 ```
-
-### Melhorias implementadas:
-
-1. **Organização**: Tópicos como configuração, pré-requisitos e execução estão em seções claras.
-2. **Formatação**: Uso consistente de blocos de código e listas para comandos e explicações.
-3. **Detalhamento**: Adicionadas instruções para problemas comuns e personalização.
-4. **Polimento na linguagem**: Textos mais fluídos e informativos.
-
-Se precisar de mais ajustes ou complementos, é só avisar! 🚀

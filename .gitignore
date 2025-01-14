@@ -1,4 +1,5 @@
 # FOLDERS
+__pycache__/
 .venv/
 
 # FILES

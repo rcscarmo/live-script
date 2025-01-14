@@ -1,14 +1,14 @@
 import subprocess
 import os
-from dotenv import load_dotenv
+from stream import *
 
-load_dotenv()
 BASE_DIR = os.path.abspath(".")
-
-twitch_stream_url = os.environ.get('twitch_stream_url')
-twitch_stream_key = os.environ.get('twitch_stream_key')
+LOOPS = 1
 
 def load_videos():
+    '''
+    Carrega todos os arquivos que esta na pasta `Videos`
+    '''
     arquivos = []
     for _, _, files in os.walk("./videos/"):
         for file in files:
@@ -19,6 +19,9 @@ video_files = load_videos()
 
 # Função para transmitir um único vídeo
 def stream_video(video_path, stream_url, stream_key):
+    '''
+    Funcao que transmite o video para a plataforma escolhida
+    '''
     command = [
         "ffmpeg",
         "-re",  # Lê o vídeo em tempo real
@@ -36,9 +39,9 @@ def stream_video(video_path, stream_url, stream_key):
     ]
     subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-# Transmitir todos os vídeos na sequência
-for video in video_files:
-    print(f"Transmitindo: {video}")
-    stream_video(video, twitch_stream_url, twitch_stream_key)
+for loops in range(LOOPS):
+    for video in video_files:
+        print(f"Transmitindo: ''' {video} '''")
+        stream_video(video, twitch_stream_url, twitch_stream_key)
 
 print("Transmissão concluída!")
