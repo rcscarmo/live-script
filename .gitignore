@@ -6,4 +6,5 @@ __pycache__/
 videos/*.mp4
 videos/*.wmv
 videos/*.flv
+videos/*.txt
 .env
